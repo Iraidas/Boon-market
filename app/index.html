@@ -10,7 +10,7 @@
 <body>
     <header class="header">
         <div class="header__container">
-            <nav class="header__nav">
+            <nav class="nav">
                 <ul class="nav__list">
                     <li class="nav__list-item">
                         <a class="nav__list-link" href="#">
@@ -23,202 +23,190 @@
                         </a>
                     </li>
                 </ul>
-                <a class="header__logo" href="">
-                    <img class="header__logo-img" src="images/Boon-market-logo.svg" alt="logo Boon market">
-                </a>
             </nav>
+        </div>
+        <div class="header__logo">
+            <img class="header__logo-img" src="images/Boon-market-logo.svg" alt="logo Boon market">
         </div>
     </header>
     <div class="wrapper">
         <main class="main">
             <section class="promo">
-                <h1 class="promo__title">Shop Goods That Do Good<span>*</span></h1>
-                <nav class="menu">
-                    <ul class="menu__list">
-                        <li class="menu__list-item">
-                            <a class="menu__list-link" href="">
-                                Conscious Kitchen
-                            </a>
-                        </li>
-                        <li class="menu__list-item">
-                            <a class="menu__list-link" href="">
-                                Conscious Pantry
-                            </a>
-                        </li>
-                        <li class="menu__list-item">
-                            <a class="menu__list-link" href="">
-                                Eco Cleaning
-                            </a>
-                        </li>
-                        <li class="menu__list-item">
-                            <a class="menu__list-link" href="">
-                                Personal Care
-                            </a>
-                        </li>
-                        <li class="menu__list-item">
-                            <a class="menu__list-link" href="">
-                                Bags & Totes
-                            </a>
-                        </li>
-                        <li class="menu__list-item">
-                            <a class="menu__list-link" href="">
-                                Gifts
-                            </a>
-                        </li>
-                    </ul>
-                </nav>
-                <a class="promo__link" href="">Shop now</a>
-                <table class="table-impact">
-                    <tr>
-                        <td rowspan="2">
-                            <strong>Boon Impact</strong>
-                            <p>Every purchase gives money directly to a cause of your choice.</p>
-                        </td>
-                        <td rowspan="2">
-                            <strong>$100,664,335</strong>
-                            <p>donated to date</p>
-                        </td>
-                        <td>Want to make a difference?</td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <a href="">Learn More</a>
-                        </td>
-                    </tr>
-                </table>
+                <div class="promo__container">
+                    <h1 class="promo__title">Shop Goods That Do Good<span class="promo__title-star">*</span></h1>
+                    <nav class="promo__menu">
+                        <ul class="menu__list">
+                            <li class="menu__list-item">
+                                <a class="menu__list-link" href="">
+                                    Conscious Kitchen
+                                </a>
+                            </li>
+                            <li class="menu__list-item">
+                                <a class="menu__list-link" href="">
+                                    Conscious Pantry
+                                </a>
+                            </li>
+                            <li class="menu__list-item">
+                                <a class="menu__list-link" href="">
+                                    Eco Cleaning
+                                </a>
+                            </li>
+                            <li class="menu__list-item">
+                                <a class="menu__list-link" href="">
+                                    Personal Care
+                                </a>
+                            </li>
+                            <li class="menu__list-item">
+                                <a class="menu__list-link" href="">
+                                    Bags & Totes
+                                </a>
+                            </li>
+                            <li class="menu__list-item">
+                                <a class="menu__list-link" href="">
+                                    Gifts
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <a class="promo__link" href="">Shop now</a>
+                    <div class="promo__table-impact">
+                        <table class="table-impact">
+                            <tr>
+                                <td rowspan="2">
+                                    <p class="table-impact__title">The Boon Impact</p>
+                                    <p class="table-impact__subtitle">Every purchase gives money directly to a cause of your choice.</p>
+                                </td>
+                                <td rowspan="2">
+                                    <p class="donate-amount">$100,664,335</p>
+                                    <p class="donate-caption">donated to date</p>
+                                </td>
+                                <td class="donate-caption">Want to make a difference?</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a class="table-impact__link" href="">Learn More</a>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
             </section>
             <section class="about">
                 <h2 class="about__title">How We Work</h2>
                 <p class="about__caption">About Boon</p>
                 <div class="about__container">
-                    <dl class="about__list">
-                        <dt class="about__list-item">
-                            <span>*</span>Good For You
-                        </dt>
-                        <dd class="about__list-item-caption">
-                            We feature clever, beautiful products that are zero-waste, non-GMO, and toxin-free.
-                        </dd>
-                        <dt class="about__list-item">
-                            <span>*</span>Good For The Planet
-                        </dt>
-                        <dd class="about__list-item-caption">
-                            Our zero-waste products and featured articles make it easy for anyone to make easy swaps with big environmental benefit.
-                        </dd>
-                        <dt class="about__list-item">
-                            <span>*</span>Good For The Community
-                        </dt>
-                        <dd class="about__list-item-caption">
-                            Each purchase made on Boon Market sends money to the cause of your choice.
-                        </dd>
-                    </dl>
+                    <ul class="about__list">
+                        <li class="about__list-item">
+                            <img class="about__list-item-img" src="images/about-img-1.png" alt="">
+                            <h3 class="about__list-item-title"><span class="about__title-star">*</span>Good For You</h3>
+                            <p class="about__list-item-caption">
+                                We feature clever, beautiful products that are zero-waste, non-GMO, and toxin-free.
+                            </p>
+                        </li>
+                        <li class="about__list-item">
+                            <img class="about__list-item-img" src="images/about-img-2.png" alt="">
+                            <h3 class="about__list-item-title"><span class="about__title-star">*</span>Good For The Planet</h3>
+                            <p class="about__list-item-caption">
+                                Our zero-waste products and featured articles make it easy for anyone to make easy swaps with big environmental benefit.
+                            </p>
+                        </li>
+                        <li class="about__list-item">
+                            <img class="about__list-item-img" src="images/about-img-3.png" alt="">
+                            <h3  class="about__list-item-title"><span  class="about__title-star">*</span>Good For The Community</h3>
+                            <p class="about__list-item-caption">
+                                Each purchase made on Boon Market sends money to the cause of your choice.
+                            </p>
+                        </li>
+                    </ul>
                 </div>
             </section>
             <section class="product">
                 <h2 class="product__title">Shop Your Values</h2>
-                <hr>
                 <div class="product__buttons">
-                    <button class="product__btn" type="button">
-                        <img class="product__btn-img" src="" alt="">
+                    <button class="product__btn product__btn-active" type="button">
+                        <img class="product__btn-img" src="images/toxin-free-svg.svg" alt="">
                         Toxin Free
                     </button>
                     <button class="product__btn" type="button">
-                        <img class="product__btn-img" src="" alt="">
+                        <img class="product__btn-img" src="images/social-good-svg.svg" alt="">
                         Social Good
                     </button>  
                     <button class="product__btn" type="button">
-                        <img class="product__btn-img" src="" alt="">
+                        <img class="product__btn-img" src="images/reusable-svg.svg" alt="">
                         Reusable
                     </button>
                     <button class="product__btn" type="button">
-                        <img class="product__btn-img" src="" alt="">
+                        <img class="product__btn-img" src="images/made-in-the-USA-svg.svg" alt="">
                         Made in the USA
                     </button>
                     <button class="product__btn" type="button">
-                        <img class="product__btn-img" src="" alt="">
+                        <img class="product__btn-img" src="images/certified-organic.svg" alt="">
                         Certified Organic
                     </button>
                     <button class="product__btn" type="button">
-                        <img class="product__btn-img" src="" alt="">
+                        <img class="product__btn-img" src="images/certified-B-corporation.svg" alt="">
                         Certified B Corporation
                     </button>
                 </div>
                 <div class="products">
                     <div class="products__container">
                         <dl class="products__list">
-                            <dt class="products__list-item">
-                                <img class="products__list-item-img" src="images/Big-Spoon-img.png" alt="">
-                                Big Spoon
-                            </dt>
-                            <dd class="products__list-caption">
-                                Nut Butter Bar, Set of 12, Cherry Chocolate
-                                <hr>
+                            <div class="products__card">
+                                <img class="products__list-item-img" src="images/HiBAR-img.png" alt="">
+                                <dt class="products__list-item">Big Spoon</dt>
+                                <dd class="products__list-caption">Nut Butter Bar, Set of 12, Cherry Chocolate</dd>
                                 <div class="products__list-caption-price">
                                     <button class="products__list-item-btn" type="button">Add to Bag</button>
                                     <p>-</p>
                                     <p class="products__list-item-cost">$27</p>
-                                    <p>10% Giveback</p>
+                                    <p class="products__giveback">10% Giveback</p>
                                 </div>
-                            </dd>
-
-                            <dt class="products__list-item">
+                            </div>
+                            <div class="products__card">
                                 <img class="products__list-item-img" src="images/Boon-Supply-img.png" alt="">
-                                Boon Supply
-                            </dt>
-                            <dd class="products__list-caption">
-                                Reusable Towels, Set of 4, Fruit
-                                <hr>
+                                <dt class="products__list-item">Boon Supply</dt>
+                                <dd class="products__list-caption">Reusable Towels, Set of 4, Fruit</dd>
                                 <div class="products__list-caption-price">
                                     <button class="products__list-item-btn" type="button">Add to Bag</button>
                                     <p>-</p>
                                     <p class="products__list-item-cost ">$22</p>
-                                    <p>40% Giveback</p>
+                                    <p class="products__giveback">40% Giveback</p>
                                 </div>
-                            </dd>
-
-                            <dt class="products__list-item">
+                            </div>
+                            <div class="products__card">
                                 <img class="products__list-item-img" src="images/Zip-Top-img.png" alt="">
-                                Zip Top
-                            </dt>
-                            <dd class="products__list-caption">
-                                <h4> Reusable Storage Set</h4>
-                                <hr>
+                                <dt class="products__list-item">Zip Top</dt>
+                                <dd class="products__list-caption">Reusable Storage Set</dd>
                                 <div class="products__list-caption-price">
                                     <button class="products__list-item-btn" type="button">Add to Bag</button>
                                     <p>-</p>
                                     <p class="products__list-item-cost">$90</p>
-                                    <p>20% Giveback</p>
+                                    <p class="products__giveback">20% Giveback</p>
                                 </div>
-                            </dd>
-
-                            <dt class="products__list-item">
+                            </div>
+                            <div class="products__card">
                                 <img class="products__list-item-img" src="images/HiBAR-img.png" alt="">
-                                HiBAR
-                            </dt>
-                            <dd class="products__list-caption">
-                                Zero Waste Moisturize Shampoo and Conditioner
-                                <hr>
+                                <dt class="products__list-item">HiBAR</dt>
+                                <dd class="products__list-caption">Zero Waste Moisturize Shampoo and Conditioner</dd>
                                 <div class="products__list-caption-price">
                                     <button class="products__list-item-btn" type="button">Add to Bag</button>
                                     <p>-</p>
                                     <p class="products__list-item-cost">$27</p>
-                                    <p>10% Giveback</p>
+                                    <p class="products__giveback">10% Giveback</p>
                                 </div>
-                            </dd>
-
-                            <dt class="products__list-item">
-                                <img class="products__list-item-img" src="images/Clean-Age-img.png" alt="">
-                                Clean Age
-                            </dt>
-                            <dd class="products__list-caption">
-                                Unscented Deodorant Bundle
-                                <hr>
+                            </div>
+                            <div class="products__card">
+                                <img class="products__list-item-img" src="images/Boon-Supply-img.png" alt="">
+                                <dt class="products__list-item">Clean Age</dt>
+                                <dd class="products__list-caption">Unscented Deodorant Bundle</dd>
+                               
                                 <div class="products__list-caption-price">
                                     <button class="products__list-item-btn" type="button">Add to Bag</button>
                                     <p>-</p>
                                     <p class="products__list-item-cost">$32</p>
-                                    <p>20% Giveback</p>
+                                    <p class="products__giveback">20% Giveback</p>
                                 </div>
-                            </dd>
+                            </div>
                         </dl>
                     </div>
                 </div>
